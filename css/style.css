@@ -1,193 +1,199 @@
-
-
-*, ::before, ::after{
-    box-sizing: border-box;
+/*======= Global styles ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    color: #fff;
-    background-color: #11121a;
-    font-family: "Inter";
-}
-
-header{
-    background-color: #1c1c24;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 25px;
+body {
+  margin: 0;
+  color: #fff;
+  background-color: #11121a;
+  font-family: "Inter";
 }
 
-.header-container{
-    max-width: 1250px;
-    margin: 0 auto;
-    width: 100%;
-    display:flex;
-    align-items: center;
-    padding: 0 25px;
-}
-.header-container .logo{
-    height: 30px;
-    margin-right: 10px;
-}
-
-.header-container .logo img{
-    height: 100%;
+/*======= Header styles ==========*/
+header {
+  background-color: #1c1c24;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 25px;
 }
 
-.search{
-    width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 25px;
+.header-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+.header-container .logo {
+  height: 30px;
+  margin-right: 10px;
 }
 
-.search-container{
-    background-color: #1c1c24;
-    height: 60px;
-    border-radius: 10px;
-    border: 2px solid #222328;
-    display: flex;
-    overflow: hidden;
+.header-container .logo img {
+  height: 100%;
 }
 
-.input-container{
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
+.search {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
-.input-container input{
-    flex-grow: 1;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 20px;
-    margin-left: 20px;
+.search-container {
+  background-color: #1c1c24;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid #222328;
+  display: flex;
+  overflow: hidden;
+}
+
+.input-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 .input-container i {
-    font-size: 20px;
-    margin-left: 25px;
+  font-size: 20px;
+  margin-left: 25px;
 }
 
-.button-container{
-    background-color: #3060ff;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
+.button-container {
+  background-color: #3060ff;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.button-container:hover{
-    opacity: 0.9;
+.button-container:hover {
+  opacity: 0.9;
 }
 
-.jobs-list{
-    max-width: 1250px;
-    background-color: #11121a;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0 25px;
-    display: flex;
-    flex-direction: column;
+/*======= Jobs list section styles ==========*/
+
+.jobs-list {
+  max-width: 1250px;
+  background-color: #11121a;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
 }
 
-.jobs-list h3{
-    margin-left: 25px;
+.jobs-list h3 {
+  margin-left: 25px;
 }
 
-.jobs-container{
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    background: #11121a;
+.jobs-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: #11121a;
 }
 
-.job-tile{
-    background: #1c1c24;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    padding: 30px;
-    transition: transform 0.3s;
+.job-tile {
+  background: #1c1c24;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 30px;
+  transition: transform 0.3s;
 }
 
-.job-tile:hover{
-    transform: scale(1.05);
+.job-tile:hover {
+  transform: scale(1.05);
 }
 
-.top{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.top img{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.rolename{
-    padding: 20px 0;
+.top img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 
-.rolename span{
-    font-size: 22px;
+.rolename {
+  padding: 20px 0;
+}
+
+.rolename span {
+  font-size: 22px;
 }
 
 .description {
-    height: 105px;
-    font-size: 0.8rem;
-    overflow: hidden;
-    color: #969398;
-    flex-grow: 1;
+  height: 105px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  color: #969398;
+  flex-grow: 1;
 }
 
-.buttons{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    height: 45px;
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
 }
 
-.button{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #969398;
-    background-color: #2e2e39;
-    font-size: 11px;
+.button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #969398;
+  background-color: #2e2e39;
+  font-size: 11px;
 }
 
-.apply-now{
-    color: #fff;
-    background: #3060ff;
-    margin-right: 15px;
+.apply-now {
+  color: #fff;
+  background: #3060ff;
+  margin-right: 15px;
 }
+
+/*======= Media Queries==========*/
 
 @media screen and (max-width: 930px) {
-    .jobs-container{
-        grid-template-columns: repeat(2,1fr);
-    }
+  .jobs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .jobs-container{
-        grid-template-columns: repeat(1,1fr);
-    }
+  .jobs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
