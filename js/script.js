@@ -6,12 +6,14 @@ document.querySelector(".button-container").addEventListener("click", () => {
   });
 });
 
+// fetch json data -> this will return a promise
 function getJobs() {
   return fetch("data.json")
     .then((response) => response.json())
     .then((data) => data);
 }
 
+// filter jobs
 function filterJobs(jobs, searchText) {
   if (searchText) {
     const filterJobs = jobs.filter((job) => {
@@ -32,6 +34,7 @@ function filterJobs(jobs, searchText) {
   }
 }
 
+// display the jobs card
 function showJobs(jobs) {
   const jobsContainer = document.querySelector(".jobs-container");
   let jobsHTML = "";
